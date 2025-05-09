@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гаррі Поттер: Магічний Світ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Магічний Світ Гаррі Поттера</h1>
+        <nav>
+            <ul>
+                <li><a href="#characters">Персонажі</a></li>
+                <li><a href="#spells">Заклинання</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="characters">
+        <h2>Персонажі</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/b/b4/Harry_Potter_and_the_Philosopher%27s_Stone_%E2%80%94_movie.jpg?20190630203531" width="250" height="250"/>
+        <div class="card">
+        <img src="https://i.pinimg.com/736x/48/13/35/48133571661bf029339e0113b5a34cca.jpg" width="125" height="125"/>
+            <h3>Гаррі Поттер</h3>
+            <button onclick="showInfo('harry')">Дізнатися більше</button>
+            <p id="harryInfo" class="info"></p>
+        </div>
+        <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq9GifAPCm49bMBUG9KsV7rWfOyu18pXPJ8A&s" width="225" height="125"/>
+            <h3>Рон Візлі</h3>
+            <button onclick="showInfo('ron')">Дізнатися більше</button>
+            <p id="ronInfo" class="info"></p>
+        </div>
+        <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/ru/a/ac/Emma_Watson_as_Hermione_Granger.jpg" width="100" height="125"/>
+            <h3>Герміона Ґрейнджер</h3>
+            <button onclick="showInfo('hermione')">Дізнатися більше</button>
+            <p id="hermioneInfo" class="info"></p>
+        </div>
+    </section>
+
+    <section id="spells">
+    <img src="https://cs6.pikabu.ru/post_img/big/2015/02/22/11/1424630393_432628441.jpg" width="175" height="250"/>
+        <h2>Заклинання</h2>
+        <div class="spell-card">
+            <h3>Лумос</h3>
+            <button onclick="castSpell('lumos')">Виконати заклинання</button>
+            <p id="lumosEffect" class="spell-effect"></p>
+        </div>
+        <div class="spell-card">
+            <h3>Експекто Патронум</h3>
+            <button onclick="castSpell('expecto')">Виконати заклинання</button>
+            <p id="expectoEffect" class="spell-effect"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Магічний світ Гаррі Поттера</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
